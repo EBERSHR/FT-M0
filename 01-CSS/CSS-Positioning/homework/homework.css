@@ -7,6 +7,8 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
+    display: block;
+    text-align: center;
 
 }
 
@@ -15,24 +17,50 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 
-
+#ejercicioDos{
+    visibility: hidden;
+}
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
 
+#ejercicioTres{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
+#ejercicioCuatro{
+    position: fixed;
+    top: 0;
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
+/* En el header hay tres elementos; "Lecciones de posicionamiento", el logo de Henry y "#SoyHenry". 
+Usando el id "ejercicioCinco", configuraremos este container como "flex box", y nos aseguraremos 
+que cada elemento está distanciado de manera proporcional entre unos y otros. También queremos que 
+cada elemento aparezca centrado verticalmente en la línea. */
 
+#ejercicioCinco{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
 
 
 /* Ejercicio 6. */
+
+
+#ejercicioCinco.span{
+    /* flex-direction: row-reverse; */
+
+}
