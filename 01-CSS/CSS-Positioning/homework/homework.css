@@ -51,16 +51,9 @@ cada elemento aparezca centrado verticalmente en la línea. */
 
 #ejercicioCinco{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-
 /* Ejercicio 6. */
-
-
-#ejercicioCinco.span{
-    /* flex-direction: row-reverse; */
-
-}
