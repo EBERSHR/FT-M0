@@ -200,8 +200,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  str += "!";
-  return str;
+  return str += "!";
 }
 
 function combinarNombres(nombre, apellido) {
@@ -258,6 +257,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   
   var vocales = ["a", "e", "i", "o", "u"];
+
   if (letra.length > 1) {
     return "Dato incorrecto";
   } else {
