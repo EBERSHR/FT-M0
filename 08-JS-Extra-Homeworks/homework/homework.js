@@ -10,6 +10,7 @@ function deObjetoAmatriz(objeto) {
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+
   var matriz = [];
   for (var x in objeto) {
     var y = [];
@@ -17,6 +18,7 @@ function deObjetoAmatriz(objeto) {
     matriz.push(y);
   }
   return matriz;
+
 }
 
 
@@ -84,9 +86,9 @@ function capicua(numero) {
   var palabra = numero.toString();
   inverso = palabra.split('').reverse().join('');
   if (palabra === inverso) {
-      return "Es capicua";
+    return "Es capicua";
   } else {
-      return "No es capicua";
+    return "No es capicua";
   }
 }
 
@@ -95,9 +97,9 @@ function deleteAbc(cadena) {
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
-  var eliminaA = cadena.replace('a', ''); 
-  var eliminaB = eliminaA.replace('b', ''); 
-  var nuevaCadena = eliminaB.replace('c', ''); 
+  var eliminaA = cadena.replace('a', '');
+  var eliminaB = eliminaA.replace('b', '');
+  var nuevaCadena = eliminaB.replace('c', '');
   return nuevaCadena;
 }
 
@@ -109,19 +111,19 @@ function sortArray(arr) {
   var arregloLen = [];
   var arreglo = [];
   for (i = 0; i < arr.length; i++) {
-      len = arr[i].length;
-      arregloLen.push(len);
+    len = arr[i].length;
+    arregloLen.push(len);
   }
   arregloLen.sort();
   while (arregloLen.length > 0) {
-      var longitud = arregloLen[0];
-      for (i = 0; i < arr.length; i++){
-          if (arr[i].length === longitud && arreglo.indexOf(arr[i] === -1)) {
-              arreglo.push(arr[i]);
-              arregloLen.shift();
-          }
+    var longitud = arregloLen[0];
+    for (i = 0; i < arr.length; i++) {
+      if (arr[i].length === longitud && arreglo.indexOf(arr[i] === -1)) {
+        arreglo.push(arr[i]);
+        arregloLen.shift();
+      }
 
-      }        
+    }
   }
   return arreglo;
 }
